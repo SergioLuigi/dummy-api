@@ -3,6 +3,7 @@ FROM eclipse-temurin:21-jdk AS build
 WORKDIR /app
 
 COPY ../gradle ./gradle
+
 COPY ../gradlew ../build.gradle.kts ../settings.gradle.kts ./
 
 RUN gradle build --no-daemon || return 0
