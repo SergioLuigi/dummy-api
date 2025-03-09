@@ -13,7 +13,7 @@ COPY ../src ./src
 
 RUN ./gradlew clean bootJar --no-daemon
 
-FROM eclipse-temurin:21-jdk
+FROM amazoncorretto:21.0.6-alpine
 
 WORKDIR /app
 
