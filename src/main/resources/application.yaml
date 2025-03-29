@@ -5,3 +5,8 @@ server:
 spring:
   application:
     name: dummy-api
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health
